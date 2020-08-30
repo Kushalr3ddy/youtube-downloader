@@ -2,3 +2,6 @@
 *.mp4
 error1.png
 error2.png
+main.spec
+build/main/base_library.zip
+build/main/main.exe.manifest
