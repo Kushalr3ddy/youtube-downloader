@@ -8,6 +8,7 @@ will be adding more features such as downloading specific resolution,filetype an
 install the required packages by doing "pip install -r requirements.txt" before running the script
 written in python 3.7.4
 
+pytube documentation included for better reference
 follow me on:
 [Instagram](https://instagram.com/coder_arena)
 
