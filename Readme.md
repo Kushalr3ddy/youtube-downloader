@@ -13,3 +13,7 @@ follow me on:
 
 subscribe here:
 [subscribe](https://www.youtube.com/channel/UCqmAMwECiUUokMpI03othpQ)
+
+IMPORTANT:
+    note that this works only with pytube3 and not the default pytube package
+    ignore if installing packages using the requirements.txt method mentioned above 
