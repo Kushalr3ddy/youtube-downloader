@@ -19,7 +19,7 @@ try:
     app.iconbitmap("yt.ico")
 except:
     pass
-#messagebox.showinfo("warning", "the window will stop responding while downloading \nDO NOT CLOSE when this happens")
+messagebox.showinfo("warning", "the window will stop responding while downloading \nDO NOT CLOSE when this happens")
 
 # functions
 def me():
