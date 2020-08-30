@@ -25,21 +25,5 @@ video = VideoFileClip(os.path.join("w.mp4"))
 video.audio.write_audiofile(os.path.join("videos","movie_sound.mp3"))
 '''
 import tkinter as tk
-app = tk.Tk()
-app.geometry("100x100")
-app.title("1")
-def f():
-    c2.config(state='disabled')
-    c1.config(state='active')
 
-def b():
-    c2.config(state='active')
-    c1.config(state='disabled')
-root = tk.Tk()
-root.geometry("100x100")
-root.title("2")
-c1 = tk.Checkbutton(app,command = f).pack()
-c2 = tk.Checkbutton(app,command=b).pack()
-b = tk.Button(app).pack()
-
-app.mainloop()
+#ffmpeg -i video.mp4 -vn audio.mp3
