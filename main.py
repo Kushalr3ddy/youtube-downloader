@@ -96,4 +96,5 @@ pbtn.place(x=269,y=63)
 #working.place(x= 100,y = 120)
 
 
-app.mainloop()
+if __name__ =='__main__':
+    app.mainloop()
