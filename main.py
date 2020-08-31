@@ -42,6 +42,8 @@ def dismp4():
 def paste():#pastes the clipboard content into entry
     e.delete(0,tk.END)
     e.insert(0,pclip.paste())
+def check():
+    pass
 
 ###################################################
 def download(): 
@@ -69,6 +71,12 @@ def download():
 #variables required
 var1 = tk.IntVar()
 var2 = tk.IntVar()
+resvar =tk.IntVar()
+var144 = tk.IntVar()
+var240 = tk.IntVar()
+var360 = tk.IntVar()
+var480 = tk.IntVar()
+var720 = tk.IntVar()
 
 #widgets
 label = tk.Label(app,text="video downloader for youtube",bg=Bcol)
@@ -83,11 +91,13 @@ mp3 = tk.Checkbutton(app,text='mp3 and mp4',variable = var2,bg=Bcol)
 mp4 = tk.Checkbutton(app,text='only mp4',variable = var1,bg=Bcol)
 #working = tk.Label(app,text = "the window will stop responding while downloading DO NOT CLOSE IT")
 pbtn = tk.Button(app,text ='paste',width=8,command = paste)
-res144 =tk.Checkbutton(app,text="144p")
-res240 =tk.Checkbutton(app,text="240p")
-res360 = tk.Checkbutton(app,text="360p")
-res480 =tk.Checkbutton(app,text="480p")
-res720 =tk.Checkbutton(app,text="720p")
+elabel = tk.Label(app,text ="select format",bg=Bcol)
+rlabel = tk.Label(app,text ="resolution",bg=Bcol)
+res144 =tk.Radiobutton(app,text="144p",variable = var144,bg=Bcol,value=144)
+res240 =tk.Radiobutton(app,text="240p",variable = var240,bg=Bcol,value =240)
+res360 = tk.Radiobutton(app,text="360p",variable = var360,bg=Bcol,value=480)
+res480 =tk.Radiobutton(app,text="480p",variable = var480,bg=Bcol,value=480)
+res720 =tk.Radiobutton(app,text="720p",variable = var720,bg=Bcol,value=720)
 
 #widget positions 
 label.place(x=20,y=10)
@@ -95,9 +105,16 @@ e.place(x= 30,y=40,width=400)
 btn1.place(x=433,y=35)
 info.place(x=500,y=113)
 version.place(x=10,y=120)
-mp3.place(x=50,y=60)
-mp4.place(x=50,y=90)
+mp3.place(x=50,y=75)
+mp4.place(x=50,y=100)
 pbtn.place(x=365,y=61)
+elabel.place(x=40,y=60)
+rlabel.place(x=170,y=60)
+res144.place(x=170,y=75)
+res240.place(x=170,y=100)
+res360.place(x=230,y=75)
+res480.place(x=230,y=100)
+res720.place(x=290,y=75)
 #working.place(x= 100,y = 120)
 
 
