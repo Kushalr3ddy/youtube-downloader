@@ -42,6 +42,7 @@ def dismp4():
 def paste():#pastes the clipboard content into entry
     e.delete(0,tk.END)
     e.insert(0,pclip.paste())
+
 def check():
     pass
 
@@ -89,15 +90,15 @@ version = tk.Label(app,text='v0.2',bg=Bcol)
 status = tk.Label(app,text = "downloading")
 mp3 = tk.Checkbutton(app,text='mp3 and mp4',variable = var2,bg=Bcol)
 mp4 = tk.Checkbutton(app,text='only mp4',variable = var1,bg=Bcol)
-#working = tk.Label(app,text = "the window will stop responding while downloading DO NOT CLOSE IT")
+#working = tk.Label(app,text = "downloading")
 pbtn = tk.Button(app,text ='paste',width=8,command = paste)
 elabel = tk.Label(app,text ="select format",bg=Bcol)
 rlabel = tk.Label(app,text ="resolution",bg=Bcol)
-res144 =tk.Radiobutton(app,text="144p",variable = var144,bg=Bcol,value=144)
-res240 =tk.Radiobutton(app,text="240p",variable = var240,bg=Bcol,value =240)
-res360 = tk.Radiobutton(app,text="360p",variable = var360,bg=Bcol,value=480)
-res480 =tk.Radiobutton(app,text="480p",variable = var480,bg=Bcol,value=480)
-res720 =tk.Radiobutton(app,text="720p",variable = var720,bg=Bcol,value=720)
+res144 =tk.Radiobutton(app,text="144p",variable = resvar,bg=Bcol,value=144)
+res240 =tk.Radiobutton(app,text="240p",variable = resvar,bg=Bcol,value =240)
+res360 = tk.Radiobutton(app,text="360p",variable = resvar,bg=Bcol,value=480)
+res480 =tk.Radiobutton(app,text="480p",variable = resvar,bg=Bcol,value=480)
+res720 =tk.Radiobutton(app,text="720p",variable = resvar,bg=Bcol,value=720)
 
 #widget positions 
 label.place(x=20,y=10)
