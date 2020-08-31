@@ -89,7 +89,7 @@ res360 = tk.Checkbutton(app,text="360p")
 res480 =tk.Checkbutton(app,text="480p")
 res720 =tk.Checkbutton(app,text="720p")
 
-#widget positions
+#widget positions 
 label.place(x=20,y=10)
 e.place(x= 30,y=40,width=400)
 btn1.place(x=433,y=35)
