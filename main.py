@@ -10,7 +10,7 @@ import pyperclip as pclip
 
 app = tk.Tk()
 app.title('yt downlodr')
-app.geometry('450x140')
+app.geometry('550x140')
 app.resizable(False,False)
 Bcol='#4b4f4c'
 app.configure(bg=Bcol)
@@ -19,7 +19,7 @@ try:
     app.iconbitmap("yt.ico")
 except:
     pass
-messagebox.showinfo("warning", "the window will stop responding while downloading \nDO NOT CLOSE when this happens")
+#messagebox.showinfo("warning", "the window will stop responding while downloading \nDO NOT CLOSE when this happens")
 
 # functions
 def me():
@@ -71,7 +71,7 @@ var1 = tk.IntVar()
 var2 = tk.IntVar()
 
 #widgets
-label = tk.Label(app,text="youtube video downloader",bg=Bcol)
+label = tk.Label(app,text="video downloader for youtube",bg=Bcol)
 info = tk.Button(app,width = 5,text = "info",command = me)
 e = tk.Entry(app,width=50)
 rename = tk.Entry(app)
@@ -83,17 +83,23 @@ mp3 = tk.Checkbutton(app,text='mp3 and mp4',variable = var2,bg=Bcol)
 mp4 = tk.Checkbutton(app,text='only mp4',variable = var1,bg=Bcol)
 #working = tk.Label(app,text = "the window will stop responding while downloading DO NOT CLOSE IT")
 pbtn = tk.Button(app,text ='paste',width=8,command = paste)
+res144 =tk.Checkbutton(app,text="144p")
+res240 =tk.Checkbutton(app,text="240p")
+res360 = tk.Checkbutton(app,text="360p")
+res480 =tk.Checkbutton(app,text="480p")
+res720 =tk.Checkbutton(app,text="720p")
 
 #widget positions
 label.place(x=20,y=10)
-e.place(x= 30,y=40)
-btn1.place(x=340,y=35)
-info.place(x=400,y=113)
+e.place(x= 30,y=40,width=400)
+btn1.place(x=433,y=35)
+info.place(x=500,y=113)
 version.place(x=10,y=120)
 mp3.place(x=50,y=60)
 mp4.place(x=50,y=90)
-pbtn.place(x=269,y=63)
+pbtn.place(x=365,y=61)
 #working.place(x= 100,y = 120)
+
 
 
 if __name__ =='__main__':
