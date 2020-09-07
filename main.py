@@ -91,14 +91,14 @@ def download():
     #status.place(x= 100,y=80)
     yt = YouTube(link)
     if var1.get()==1 and var2.get()==0:
-        yt.streams.get_by_itag('18').download('saved',yt.title)#foldername,filename,first
+        if var144==1:
+            yt.streams.get_by_itag('18').download('saved',yt.title)#foldername,filename,first
     elif var1.get() ==0 and var2.get() ==1:
         yt.streams.get_by_itag('18').download('saved',yt.title)#foldername,filename,first
         video = VideoFileClip(f"saved\\{yt.title}.mp4")
         video.audio.write_audiofile(f"saved\\{yt.title}.mp3")
         #os.remove(f"{yt.title}.mp4")
-    elif var1.get() ==1 and var2.get() ==1:
-        tk.messagebox.showerror("Error","select only one of the checkboxes")
+    
     else:
         tk.messagebox.showerror('Error',"select one of the checkbox")
 ###########################################################
