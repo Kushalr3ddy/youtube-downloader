@@ -43,8 +43,43 @@ def paste():#pastes the clipboard content into entry
     e.delete(0,tk.END)
     e.insert(0,pclip.paste())
 
-def check():
-    pass
+###checkbutton functions######
+def check144():
+    
+    var240.set(0)
+    var360.set(0)
+    var480.set(0)
+    var720.set(0)
+
+def check240():
+    
+    var144.set(0)
+    var360.set(0)
+    var480.set(0)
+    var720.set(0)
+
+def check360():
+    
+    var144.set(0)
+    var240.set(0)
+    var480.set(0)
+    var720.set(0)
+
+def check480():
+
+    var144.set(0)
+    var240.set(0)
+    var360.set(0)
+    var720.set(0)
+
+def check720():
+
+    var144.set(0)
+    var240.set(0)
+    var360.set(0)
+    var480.set(0)
+
+#############################
 
 ###################################################
 def download(): 
@@ -73,7 +108,7 @@ def download():
 var1 = tk.IntVar()
 var2 = tk.IntVar()
 resvar =tk.StringVar()
-resvar.set(0)
+#resvar.set(0)
 var144 = tk.IntVar()
 var240 = tk.IntVar()
 var360 = tk.IntVar()
@@ -89,17 +124,17 @@ btn1 = tk.Button(app,text='download',command =download)
 btn2 = tk.Button(app,text='paste')
 version = tk.Label(app,text='v0.2',bg=Bcol)
 status = tk.Label(app,text = "downloading")
-mp3 = tk.Checkbutton(app,text='mp3 and mp4',variable = var2,bg=Bcol)
-mp4 = tk.Checkbutton(app,text='only mp4',variable = var1,bg=Bcol)
+mp3 = tk.Checkbutton(app,text='mp3 and mp4',variable = var2,bg=Bcol,command=lambda:var1.set(0))
+mp4 = tk.Checkbutton(app,text='only mp4',variable = var1,bg=Bcol,command=lambda:var2.set(0))
 #working = tk.Label(app,text = "downloading")
 pbtn = tk.Button(app,text ='paste',width=8,command = paste)
 elabel = tk.Label(app,text ="select format",bg=Bcol)
 rlabel = tk.Label(app,text ="resolution",bg=Bcol)
-res144 =tk.Radiobutton(app,text="144p",variable = var144,bg=Bcol,value=144)
-res240 =tk.Radiobutton(app,text="240p",variable = var240,bg=Bcol,value =240)
-res360 = tk.Radiobutton(app,text="360p",variable = var360,bg=Bcol,value=480)
-res480 =tk.Radiobutton(app,text="480p",variable = var480,bg=Bcol,value=480)
-res720 =tk.Radiobutton(app,text="720p",variable = var720,bg=Bcol,value=720)
+res144 =tk.Checkbutton(app,text="144p",variable = var144,bg=Bcol,onvalue=1,offvalue=0,command=lambda:check144())
+res240 =tk.Checkbutton(app,text="240p",variable = var240,bg=Bcol,onvalue =1,offvalue=0,command=lambda:check240())
+res360 = tk.Checkbutton(app,text="360p",variable = var360,bg=Bcol,onvalue=1,offvalue=0,command=lambda:check360())
+res480 =tk.Checkbutton(app,text="480p",variable = var480,bg=Bcol,onvalue=1,offvalue=0,command=lambda:check480())
+res720 =tk.Checkbutton(app,text="720p",variable = var720,bg=Bcol,onvalue=1,offvalue=0,command=check720)
 resmenu = tk.Menubutton(app)
 #widget positions 
 label.place(x=20,y=10)
