@@ -1,9 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
-import os
 from pytube import YouTube
 import webbrowser
-import time
 from moviepy.video.io.VideoFileClip import *
 import pyperclip as pclip
 #from moviepy.audio.fx import audio_fadein
