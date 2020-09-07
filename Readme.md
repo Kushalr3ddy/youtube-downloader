@@ -18,4 +18,4 @@ subscribe here:
 
 IMPORTANT:
     note that this works only with pytube3 and not the default pytube package
-    ignore if installing packages using the requirements.txt method mentioned above 
+    ignore if you are installing packages from the requirements.txt method mentioned above 
