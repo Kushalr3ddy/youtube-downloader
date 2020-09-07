@@ -91,10 +91,30 @@ def download():
     #status.place(x= 100,y=80)
     yt = YouTube(link)
     if var1.get()==1 and var2.get()==0:
-        if var144==1:
-            yt.streams.get_by_itag('18').download('saved',yt.title)#foldername,filename,first
+        if var144.get()==1:
+            yt.streams.get_by_itag(160).download()#foldername,filename,first
+        elif var240.get()==1:
+            yt.streams.get_by_itag(133).download()
+        elif var360.get()==1:
+            yt.streams.get_by_itag(18).download()
+        elif var480.get()==1:
+            yt.streams.get_by_itag(135).download()
+        elif var720.get()==1:
+            yt.streams.get_by_itag(22).download()
+
+
     elif var1.get() ==0 and var2.get() ==1:
-        yt.streams.get_by_itag('18').download('saved',yt.title)#foldername,filename,first
+        if var144.get()==1:
+            yt.streams.get_by_itag(160).download()#foldername,filename,first
+        elif var240.get()==1:
+            yt.streams.get_by_itag(133).download()
+        elif var360.get()==1:
+            yt.streams.get_by_itag(18).download()
+        elif var480.get()==1:
+            yt.streams.get_by_itag(135).download()
+        elif var720.get()==1:
+            yt.streams.get_by_itag(22).download()
+
         video = VideoFileClip(f"saved\\{yt.title}.mp4")
         video.audio.write_audiofile(f"saved\\{yt.title}.mp3")
         #os.remove(f"{yt.title}.mp4")
@@ -124,8 +144,8 @@ btn1 = tk.Button(app,text='download',command =download)
 btn2 = tk.Button(app,text='paste')
 version = tk.Label(app,text='v0.2',bg=Bcol)
 status = tk.Label(app,text = "downloading")
-mp3 = tk.Checkbutton(app,text='mp3 and mp4',variable = var2,bg=Bcol,command=lambda:var1.set(0))
-mp4 = tk.Checkbutton(app,text='only mp4',variable = var1,bg=Bcol,command=lambda:var2.set(0))
+mp3 = tk.Checkbutton(app,text='mp3 and mp4',variable = var2,onvalue=1,offvalue=0,bg=Bcol,command=lambda:var1.set(0))
+mp4 = tk.Checkbutton(app,text='only mp4',variable = var1,onvalue=1,offvalue=0,bg=Bcol,command=lambda:var2.set(0))
 #working = tk.Label(app,text = "downloading")
 pbtn = tk.Button(app,text ='paste',width=8,command = paste)
 elabel = tk.Label(app,text ="select format",bg=Bcol)
