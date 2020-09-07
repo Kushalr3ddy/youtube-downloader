@@ -13,7 +13,7 @@ pytube documentation included for better reference
 follow me on:
 [Instagram](https://instagram.com/coder_arena)
 
-subscribe here:
+and consider subscribing here:
 [subscribe](https://www.youtube.com/channel/UCqmAMwECiUUokMpI03othpQ)
 
 IMPORTANT:
