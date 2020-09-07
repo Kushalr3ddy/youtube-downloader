@@ -3,11 +3,21 @@ youtube downloader made in python 3
 ![Screenshot](prev.png)
 
 
-will be adding more features such as downloading specific resolution,filetype and such
+will be adding more features
 
 install the required packages by doing "pip install -r requirements.txt" before running the script
 written in python 3.7.4
 
+for running the script:
+
+on windows:
+    clone or download repo onto a folder
+    open cmd and navigate to the folder where you have the repo cloned
+    do:
+    pip install -r requirements.txt
+    python3 main.py (if you have multiple versions of python installed)
+             or
+    python main.py
 pytube documentation included for better reference
 
 follow me on:
