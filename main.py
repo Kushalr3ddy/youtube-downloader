@@ -22,6 +22,7 @@ messagebox.showinfo("warning", "the window will stop responding while downloadin
 # functions
 def me():
     webbrowser.open('https://www.instagram.com/coder_arena/',new=2)
+    webbrowser.open('https://www.youtube.com/channel/UCqmAMwECiUUokMpI03othpQ',new=2)
     '''If new is 0, the url is opened in the same browser window if possible. 
     If new is 1, a new browser window is opened if possible. 
     If new is 2, a new browser page (“tab”) is opened if possible'''
