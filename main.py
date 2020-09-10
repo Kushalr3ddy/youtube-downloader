@@ -4,7 +4,7 @@ from pytube import YouTube
 import webbrowser
 from moviepy.video.io.VideoFileClip import *
 import pyperclip as pclip
-from moviepy.audio.fx import audio_fadein
+#from moviepy.audio.fx import audio_fadein
 
 app = tk.Tk()
 app.title('yt downlodr')
