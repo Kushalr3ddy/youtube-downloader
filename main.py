@@ -27,17 +27,6 @@ def me():
     If new is 1, a new browser window is opened if possible. 
     If new is 2, a new browser page (“tab”) is opened if possible'''
 
-'''
-def dismp3():
-    mp3.config(state='disabled')
-    mp4.config(state='active')
-
-def dismp4():
-    mp4.config(state='disabled')
-    mp3.config(state='active')
-
-'''
-
 def paste():#pastes the clipboard content into entry
     e.delete(0,tk.END)
     e.insert(0,pclip.paste())
