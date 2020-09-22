@@ -14,10 +14,10 @@ on windows:
     clone or download repo onto a folder
     open cmd and navigate to the folder where you have the repo cloned
     do:
-    pip install -r requirements.txt
-    python3 main.py (if you have multiple versions of python installed)
+    *pip install -r requirements.txt
+    *python3 main.py (if you have multiple versions of python installed)
              or
-    python main.py
+    *python main.py
 pytube documentation included for better reference
 
 follow me on:
